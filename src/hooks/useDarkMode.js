@@ -8,7 +8,7 @@ export const useDarkMode = () => {
         root.classList.remove(colorTheme);
         root.classList.add(theme)
 
-    }, [theme], colorTheme)
+    }, [colorTheme, theme], colorTheme)
     return [colorTheme, setTheme]
 }
 
